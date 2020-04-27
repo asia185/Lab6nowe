@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Pierwszy springowy projekt</title>
+</head>
+<body>
+    <p>
+        Imię: <span th:text="${person.getFirstName()}">Jan</span>
+    </p>
+    <p>
+        Nazwisko: <span th:text="${person.getLastName()}">Kowalski</span>
+    </p>
+    <p>
+        Wiek: <span th:text="${person.getAge()}">20</span>
+    </p>
+</body>
+</html>
